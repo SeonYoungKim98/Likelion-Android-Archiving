@@ -1,92 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
-        tools:context=".MainActivity" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" app:srcCompat="@drawable/logo"
+                android:id="@+id/imageButton19" app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="28dp"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintVertical_bias="0.0"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/dm" android:id="@+id/imageButton20"
+                app:layout_constraintStart_toEndOf="@+id/imageButton19" android:layout_marginStart="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintHorizontal_bias="1.0" android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
     <LinearLayout
             android:orientation="vertical"
-            android:layout_width="395dp"
-            android:layout_height="715dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
         <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-        </LinearLayout>
-        <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            <ImageButton
-                    android:layout_width="70dp"
-                    android:layout_height="59dp" app:srcCompat="@drawable/camera"
-                    android:id="@+id/imageButton18"/>
-            <ImageButton
-                    android:layout_width="261dp"
-                    android:layout_height="match_parent" app:srcCompat="@drawable/logo"
-                    android:id="@+id/imageButton19"/>
-            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton
+                    android:text="RadioButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="59dp" app:srcCompat="@drawable/dm" android:id="@+id/imageButton20"/>
+                    android:layout_height="wrap_content" android:id="@+id/radioButton2"
+                    android:layout_weight="1"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton3" android:layout_weight="1"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton5" android:layout_weight="1"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton6" android:layout_weight="1"/>
+            <RadioButton
+                    android:text="RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/radioButton7" android:layout_weight="1"/>
         </LinearLayout>
         <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
             <LinearLayout
                     android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                <ImageView
+                <ImageButton
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content" app:srcCompat="@android:drawable/ic_menu_my_calendar"
+                        android:id="@+id/imageButton5" android:layout_weight="1"/>
+                <TextView
+                        android:text="SeonyoungKim98"
+                        android:layout_width="27dp"
+                        android:layout_height="41dp" android:id="@+id/textView" android:layout_weight="1"/>
+                <ImageButton
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent" app:srcCompat="@drawable/no" android:id="@+id/imageView2"
-                        android:layout_weight="1"/>
-                <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="42dp" app:srcCompat="@drawable/dot" android:id="@+id/imageView"/>
+                        android:layout_height="wrap_content" app:srcCompat="?attr/actionModeShareDrawable"
+                        android:id="@+id/imageButton6" android:layout_weight="1"/>
             </LinearLayout>
             <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="450dp" app:srcCompat="@drawable/flower" android:id="@+id/imageView3"/>
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp">
-                <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" app:srcCompat="@drawable/good"
-                        android:id="@+id/imageButton27" android:layout_weight="1"/>
-                <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" app:srcCompat="@drawable/re"
-                        android:id="@+id/imageButton28" android:layout_weight="1"/>
-                <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" app:srcCompat="@drawable/dm"
-                        android:id="@+id/imageButton29" android:layout_weight="1"/>
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" android:id="@+id/textView13" android:layout_weight="1"/>
-                <ImageButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" app:srcCompat="@drawable/keep"
-                        android:id="@+id/imageButton30" android:layout_weight="1"/>
-            </LinearLayout>
-            <TextView
-                    android:text="좋아요 99개"
-                    android:layout_height="47dp" android:id="@+id/textView9"
-                    android:layout_width="match_parent"/>
-            <TextView
-                    android:text="댓글1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView10"/>
-            <TextView
-                    android:text="댓글2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" android:id="@+id/textView11"/>
-            <TextView
-                    android:text="댓글3"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" android:id="@+id/textView12"/>
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/flower" android:id="@+id/imageView3"/>
         </LinearLayout>
+
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+    <android.support.design.widget.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+    >
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                android:id="@+id/imageButton8"/>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_search"
+                android:id="@+id/imageButton9"/>
+    </android.support.design.widget.BottomNavigationView>
+
+</LinearLayout>
