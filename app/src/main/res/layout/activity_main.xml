@@ -5,7 +5,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".MainActivity"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
 >
     <LinearLayout
@@ -40,19 +40,23 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal" android:id="@+id/Story_bar">
+                android:orientation="horizontal"
+                android:id="@+id/Story_bar">
 
 
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_width="wrap_content" android:id="@+id/MyStory">
+                    android:layout_width="wrap_content"
+                    android:id="@+id/MyStory">
 
                 <ImageButton
                         app:srcCompat="@drawable/pro_3"
                         android:id="@+id/myStory_pic"
-                        android:layout_weight="1" android:layout_width="50dp" android:layout_height="50dp"/>
+                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
                 <TextView
                         android:text="나의스토리"
                         android:layout_width="wrap_content"
@@ -64,12 +68,15 @@
                     android:orientation="vertical"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_width="wrap_content" android:id="@+id/Story_Test1">
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Story_Test1">
 
                 <ImageButton
                         app:srcCompat="@drawable/pro_3"
                         android:id="@+id/story_test_pic1"
-                        android:layout_weight="1" android:layout_width="50dp" android:layout_height="50dp"/>
+                        android:layout_weight="1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
                 <TextView
                         android:text="test1"
                         android:layout_width="wrap_content"
@@ -82,7 +89,9 @@
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" android:layout_width="wrap_content" android:id="@+id/Story_test2">
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/Story_test2">
                 <ImageButton
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/pro_3"
@@ -92,13 +101,15 @@
                 <TextView
                         android:text="test2"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" android:id="@+id/stroy_test_name2"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/stroy_test_name2"
                         android:layout_weight="1"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent" android:layout_weight="1" android:id="@+id/Story_test3">
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" android:id="@+id/Story_test3">
                 <ImageButton
                         android:layout_height="50dp" app:srcCompat="@drawable/pro_3"
                         android:id="@+id/story_test_pic3"
@@ -125,100 +136,20 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <ImageButton
-                        app:srcCompat="@drawable/pro_3"
-                        android:id="@+id/imageButton11"
-                        android:layout_height="50dp"
-                        android:layout_width="50dp"/>
-                <TextView
-                        android:text="syKim98"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/textView"
-                        android:textSize="25dp"
-                        android:layout_weight="1"/>
-                <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="?attr/actionModeShareDrawable"
-                        android:id="@+id/imageButton6"
-                />
-            </LinearLayout>
-            <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="341dp"
-                    app:srcCompat="@drawable/flower2"
-                    android:id="@+id/imageView3"/>
-
-
-            <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-            >
-
-
-                <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        app:srcCompat="@drawable/heart"
-                        android:id="@+id/imageButton3"
-                />
-
-                <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@android:drawable/ic_dialog_email"
-                        android:id="@+id/reply"
-                />
-                <ImageButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@android:drawable/ic_menu_send"
-                        android:id="@+id/imageButton7"
-                />
-
-            </LinearLayout>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="좋아요 109개"
-                        android:textStyle="bold"
-                />
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="syKim98"
-                        android:textStyle="bold"
-                />
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="기분좋은 날씨였다 :D 목동역에서부터 안양천까지 엄청 많이 걸었지만 재밌었다. 사진보정필터는 아날로그 파리! 안양천에서~"
-                />
-
-            </LinearLayout>
-        </LinearLayout>
-
     </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            tools:listitem="@layout/item_feed"
+    >
+    </android.support.v7.widget.RecyclerView>
+
 
     <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:id="@+id/navi">
 
